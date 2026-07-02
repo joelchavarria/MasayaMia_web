@@ -93,7 +93,7 @@ function App() {
 
       <section className="intro" id="experiencia">
         <div>
-          <p className="eyebrow">Estos somos</p>
+          <p className="eyebrow">Somos</p>
           <h2>Un café nacido para sentirse cercano.</h2>
         </div>
         <p>
