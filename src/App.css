@@ -308,10 +308,33 @@ h2 {
   box-shadow: 0 20px 60px rgba(83, 39, 21, 0.16);
 }
 
+.culture-band {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.culture-band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(
+      rgba(255, 248, 236, 0.88),
+      rgba(255, 248, 236, 0.93)
+    ),
+    url('/media/masaya-culture-bg.jpg') center/cover;
+}
+
 .location {
   display: grid;
   grid-template-columns: 1fr minmax(280px, 420px);
   gap: 40px;
+}
+
+.culture-band .location {
+  padding-bottom: 96px;
 }
 
 .details {
@@ -342,6 +365,7 @@ h2 {
 
 .social-section {
   border-top: 1px solid rgba(95, 45, 31, 0.14);
+  padding-top: 112px;
   text-align: center;
 }
 

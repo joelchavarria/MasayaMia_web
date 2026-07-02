@@ -174,42 +174,44 @@ function App() {
         <img src="/media/pet-friendly.jpg" alt="Masaya Mía es pet friendly" />
       </section>
 
-      <section className="location" id="ubicacion">
-        <div>
-          <p className="eyebrow">Visitanos</p>
-          <h2>En el centro de Masaya.</h2>
-          <p>
-            Administración de Renta, 1/2 cuadra al norte. Contiguo a Farmacia,
-            Masaya, Nicaragua.
-          </p>
-        </div>
-        <div className="details">
+      <div className="culture-band">
+        <section className="location" id="ubicacion">
           <div>
-            <span>Horario</span>
-            <strong>Todos los días · 7:30 a.m. - 9:00 p.m.</strong>
+            <p className="eyebrow">Visitanos</p>
+            <h2>En el centro de Masaya.</h2>
+            <p>
+              Administración de Renta, 1/2 cuadra al norte. Contiguo a Farmacia,
+              Masaya, Nicaragua.
+            </p>
           </div>
-          <div>
-            <span>Teléfono</span>
-            <strong>7631-8743</strong>
-          </div>
-          <a href="https://maps.google.com/?q=XWG3%2BG82%20Masaya%20M%C3%ADa%20caf%C3%A9">
-            Abrir en Google Maps
-          </a>
-        </div>
-      </section>
-
-      <section className="social-section" id="redes">
-        <p className="eyebrow">Seguinos</p>
-        <h2>La vida de Masaya Mía también pasa en redes.</h2>
-        <div className="social-links">
-          {socialLinks.map((link) => (
-            <a href={link.href} key={link.label} target="_blank" rel="noreferrer">
-              <SocialIcon label={link.label} />
-              {link.label}
+          <div className="details">
+            <div>
+              <span>Horario</span>
+              <strong>Todos los días · 7:30 a.m. - 9:00 p.m.</strong>
+            </div>
+            <div>
+              <span>Teléfono</span>
+              <strong>🇳🇮 +505 7631-8743</strong>
+            </div>
+            <a href="https://maps.google.com/?q=XWG3%2BG82%20Masaya%20M%C3%ADa%20caf%C3%A9">
+              Abrir en Google Maps
             </a>
-          ))}
-        </div>
-      </section>
+          </div>
+        </section>
+
+        <section className="social-section" id="redes">
+          <p className="eyebrow">Seguinos</p>
+          <h2>La vida de Masaya Mía también pasa en redes.</h2>
+          <div className="social-links">
+            {socialLinks.map((link) => (
+              <a href={link.href} key={link.label} target="_blank" rel="noreferrer">
+                <SocialIcon label={link.label} />
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </section>
+      </div>
 
       <footer>
         <span>© {currentYear} Masaya Mía.</span>
