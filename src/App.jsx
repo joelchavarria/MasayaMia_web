@@ -36,6 +36,13 @@ function SocialIcon({ label }) {
   )
 }
 
+function scrollToSection(sectionId) {
+  document.getElementById(sectionId)?.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  })
+}
+
 function App() {
   const currentYear = new Date().getFullYear()
 
@@ -47,10 +54,18 @@ function App() {
           <span>Masaya Mía</span>
         </a>
         <nav aria-label="Navegación principal">
-          <a href="#experiencia">Experiencia</a>
-          <a href="#comunidad">Comunidad</a>
-          <a href="#ubicacion">Ubicación</a>
-          <a href="#redes">Redes</a>
+          <button type="button" onClick={() => scrollToSection('experiencia')}>
+            Experiencia
+          </button>
+          <button type="button" onClick={() => scrollToSection('comunidad')}>
+            Comunidad
+          </button>
+          <button type="button" onClick={() => scrollToSection('ubicacion')}>
+            Ubicación
+          </button>
+          <button type="button" onClick={() => scrollToSection('redes')}>
+            Redes
+          </button>
         </nav>
       </header>
 
@@ -69,7 +84,9 @@ function App() {
             <a href="https://maps.google.com/?q=Masaya%20M%C3%ADa%20caf%C3%A9%20Masaya%20Nicaragua">
               Cómo llegar
             </a>
-            <a href="#redes">Seguir en redes</a>
+            <button type="button" onClick={() => scrollToSection('redes')}>
+              Seguir en redes
+            </button>
           </div>
         </div>
       </section>

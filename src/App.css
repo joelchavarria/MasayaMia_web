@@ -42,8 +42,9 @@ main {
   gap: 6px;
 }
 
-.site-header nav a,
+.site-header nav button,
 .hero-actions a,
+.hero-actions button,
 .details a,
 .social-links a {
   border-radius: 999px;
@@ -52,7 +53,11 @@ main {
   text-decoration: none;
 }
 
-.site-header nav a {
+.site-header nav button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
   padding: 8px 12px;
 }
 
@@ -114,6 +119,7 @@ footer span {
 }
 
 .hero-actions a,
+.hero-actions button,
 .details a,
 .social-links a {
   min-height: 44px;
@@ -121,7 +127,10 @@ footer span {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  border: 0;
   padding: 0 18px;
+  cursor: pointer;
+  font: inherit;
 }
 
 .hero-actions a:first-child,
@@ -129,9 +138,10 @@ footer span {
   background: #ffd04d;
 }
 
-.hero-actions a:last-child,
+.hero-actions button,
 .social-links a {
   border: 1px solid rgba(255, 248, 236, 0.7);
+  background: transparent;
   color: #fff8ec;
 }
 
