@@ -42,7 +42,7 @@ function App() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#inicio" aria-label="Masaya Mía inicio">
+        <a className="brand" href="/" aria-label="Masaya Mía inicio">
           <img src="/brand/icon-192.png" alt="" width="48" height="48" />
           <span>Masaya Mía</span>
         </a>
